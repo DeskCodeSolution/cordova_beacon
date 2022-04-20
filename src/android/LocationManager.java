@@ -16,7 +16,7 @@
        specific language governing permissions and limitations
        under the License.
 */
-package com.unarin.cordova.beacon;
+package com.deskcode.cordova.beacon;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -75,16 +75,16 @@ import java.util.concurrent.LinkedBlockingQueue;
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 public class LocationManager extends CordovaPlugin implements BeaconConsumer {
 
-    public static final String TAG = "com.unarin.beacon";
+    public static final String TAG = "com.deskcode.beacon";
     private static final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
-    private static final String FOREGROUND_BETWEEN_SCAN_PERIOD_NAME = "com.unarin.cordova.beacon.android.altbeacon.ForegroundBetweenScanPeriod";
-    private static final String FOREGROUND_SCAN_PERIOD_NAME = "com.unarin.cordova.beacon.android.altbeacon.ForegroundScanPeriod";
+    private static final String FOREGROUND_BETWEEN_SCAN_PERIOD_NAME = "com.deskcode.cordova.beacon.android.altbeacon.ForegroundBetweenScanPeriod";
+    private static final String FOREGROUND_SCAN_PERIOD_NAME = "com.deskcode.cordova.beacon.android.altbeacon.ForegroundScanPeriod";
     private static final int DEFAULT_FOREGROUND_BETWEEN_SCAN_PERIOD = 0;
-    private static final String SAMPLE_EXPIRATION_MILLISECOND = "com.unarin.cordova.beacon.android.altbeacon.SampleExpirationMilliseconds";
+    private static final String SAMPLE_EXPIRATION_MILLISECOND = "com.deskcode.cordova.beacon.android.altbeacon.SampleExpirationMilliseconds";
     private static final int DEFAULT_SAMPLE_EXPIRATION_MILLISECOND = 20000;
-    private static final String ENABLE_ARMA_FILTER_NAME = "com.unarin.cordova.beacon.android.altbeacon.EnableArmaFilter";
+    private static final String ENABLE_ARMA_FILTER_NAME = "com.deskcode.cordova.beacon.android.altbeacon.EnableArmaFilter";
     private static final boolean DEFAULT_ENABLE_ARMA_FILTER = false;
-    private static final String REQUEST_BT_PERMISSION_NAME = "com.unarin.cordova.beacon.android.altbeacon.RequestBtPermission";
+    private static final String REQUEST_BT_PERMISSION_NAME = "com.deskcode.cordova.beacon.android.altbeacon.RequestBtPermission";
     private static final boolean DEFAULT_REQUEST_BT_PERMISSION = true;
     private static final int DEFAULT_FOREGROUND_SCAN_PERIOD = 1100;
     private static int CDV_LOCATION_MANAGER_DOM_DELEGATE_TIMEOUT = 30;

@@ -16,7 +16,7 @@
        specific language governing permissions and limitations
        under the License.
 */
-package com.unarin.cordova.beacon;
+package com.deskcode.cordova.beacon;
 
 import org.apache.cordova.PluginResult;
 

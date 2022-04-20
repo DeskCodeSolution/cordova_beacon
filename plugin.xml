@@ -70,6 +70,9 @@
         <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
             <string>This app would like to scan for iBeacons both while in use and while in the background.</string>
         </config-file>
+        <config-file target="*-Info.plist" parent="NSBluetoothAlwaysUsageDescription">
+            <string>This app would like to scan for iBeacons.</string>
+        </config-file>
 
         <header-file src="src/ios/CDVLocationManager.h"/>
         <source-file src="src/ios/CDVLocationManager.m"/>
@@ -88,7 +91,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="LocationManager" >
-                <param name="android-package" value="com.unarin.cordova.beacon.LocationManager"/>
+                <param name="android-package" value="com.deskcode.cordova.beacon.LocationManager"/>
             </feature>
         </config-file>
 
@@ -96,10 +99,10 @@
 			<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
         </config-file>
 
-        <source-file src="src/android/LocationManager.java" target-dir="src/com/unarin/cordova/beacon" />
-        <source-file src="src/android/IBeaconServiceNotifier.java" target-dir="src/com/unarin/cordova/beacon" />
-        <source-file src="src/android/ILocationManagerCommand.java" target-dir="src/com/unarin/cordova/beacon" />
-        <source-file src="src/android/PausableThreadPoolExecutor.java" target-dir="src/com/unarin/cordova/beacon" />
+        <source-file src="src/android/LocationManager.java" target-dir="src/com/deskcode/cordova/beacon" />
+        <source-file src="src/android/IBeaconServiceNotifier.java" target-dir="src/com/deskcode/cordova/beacon" />
+        <source-file src="src/android/ILocationManagerCommand.java" target-dir="src/com/deskcode/cordova/beacon" />
+        <source-file src="src/android/PausableThreadPoolExecutor.java" target-dir="src/com/deskcode/cordova/beacon" />
 
         <framework src="src/android/cordova-plugin-ibeacon.gradle" custom="true" type="gradleReference" />
         <framework src="com.android.support:support-core-utils:26+" />

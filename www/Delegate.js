@@ -6,9 +6,9 @@
  to you under the Apache License, Version 2.0 (the
  "License"); you may not use this file except in compliance
  with the License.  You may obtain a copy of the License at
- 
+
  http://www.apache.org/licenses/LICENSE-2.0
- 
+
  Unless required by applicable law or agreed to in writing,
  software distributed under the License is distributed on an
  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -17,16 +17,16 @@
  under the License.
  */
 
-var _ = require('com.unarin.cordova.beacon.underscorejs');
-var Regions = require('com.unarin.cordova.beacon.Regions');
+var _ = require('com.deskcode.cordova.beacon.underscorejs');
+var Regions = require('com.deskcode.cordova.beacon.Regions');
 
 
 /**
  * Instances of this class are delegates between the {@link LocationManager} and
  * the code that consumes the messages generated on in the native layer.
- * 
- * @example 
- * 
+ *
+ * @example
+ *
  * var delegate = new cordova.plugins.LocationManager.Delegate();
  *
  * delegate.didDetermineStateForRegion = function(region) {
@@ -36,7 +36,7 @@ var Regions = require('com.unarin.cordova.beacon.Regions');
  * delegate.didStartMonitoringForRegion = function (region) {
  *      console.log('didStartMonitoringForRegion: ' + JSON.stringify(region));
  * }
- * 
+ *
  * @returns {Delegate} An instance of the type {@type Delegate}.
  */
 function Delegate (){};
@@ -77,7 +77,7 @@ Delegate.peripheralManagerDidUpdateState = function(pluginResult) {
 };
 
 Delegate.didChangeAuthorizationStatus = function(status) {
-	
+
 };
 
 Delegate.safeTraceLogging = function(message) {
